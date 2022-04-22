@@ -1,7 +1,7 @@
 # Contributors
-Kerem Kaya
+Kerem Kaya https://github.com/Keratra
 Mehmet Talha Bozan
-Pelin Mişe
+Pelin Mişe 
 
 # Tetris 2048
 Our Tetris 2048 Project for COMP204
