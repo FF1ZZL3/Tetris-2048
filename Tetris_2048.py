@@ -30,7 +30,7 @@ def start():
    # if the game doesn't start, then please remove this line
    # this is because there is a possiblity that the line below only works on Windows
    # play music in the background
-   playsound('music.mp3', False)
+   #playsound('music.mp3', False)
 
    # display a simple menu before opening the game
    # by using the display_game_menu function defined below
@@ -116,7 +116,7 @@ def start():
             grid.display(game_speed)
             #display_next_tetromino(grid_h, grid_w, grid, next_tetromino_shape)
       else: # game over scene
-         final_score = grid.reset_scene() # remove the existing tetrominos in grid
+         grid.reset_scene() # remove the existing tetrominos in grid
          first_tetromino_shape = generate_next_tetromino_type()
          current_tetromino = create_tetromino(first_tetromino_shape)
          grid.current_tetromino = current_tetromino
@@ -124,7 +124,7 @@ def start():
          next_tetromino_shape = generate_next_tetromino_type()
          next_tetromino_display = create_tetromino(next_tetromino_shape)
          grid.display_tetromino = next_tetromino_display
-         is_game_scene = display_game_over(grid_h, grid_w, final_score)
+         is_game_scene = display_game_over(grid_h, grid_w)
          
          is_game_scene, game_speed = display_game_menu(grid_h, grid_w)
          # clear the queue of the pressed keys for an actual restart
